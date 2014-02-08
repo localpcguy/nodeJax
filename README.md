@@ -16,3 +16,12 @@ In the /data/ folder, create or edit the apiroutes.json file to contain an array
 		}
 	]
 
+Directions:
+
+1. must have node and npm installed
+2. clone the repo to a local directory
+3. cd nodeJax
+4. npm install
+5. edit the /data/apiroutes.json to contain the routes & data you want
+6. node app
+
