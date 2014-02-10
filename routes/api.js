@@ -13,14 +13,14 @@ exports.getjson = function(req, res){
     fs.readFile(file, 'utf8', function (err, data) {
         if (err) {
             console.log('Error: ' + err);
-            res.end("{'error', 'Cannot read the apiroutes.json file.'}");
+            res.end("{\"error\": \"Cannot read the apiroutes.json file.\"}");
             return;
         }
      
         try {
             data = JSON.parse(data);
         } catch (e) {
-            res.end("{'error', 'Cannot parse the apiroutes.json file as JSON.'}");
+            res.end("{\"error\": \"Cannot parse the apiroutes.json file as JSON.\"}");
             return;
         }
 
@@ -32,6 +32,6 @@ exports.getjson = function(req, res){
                 return;
             }
         }
-        res.end("{'error', 'No matching route'}");
+        res.end("{\"error\": \"No matching route\"}");
     });
 };
