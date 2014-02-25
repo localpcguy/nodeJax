@@ -3,7 +3,7 @@
  * GET api
  */
 var fs = require('fs');
-var file = __dirname + './../data/apiroutes.json';
+var file = 'data/apiroutes.json';
 
 exports.getjson = function(req, res){
     var routeRequested = req.params.param
