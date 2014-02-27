@@ -19,11 +19,11 @@ exports.getjson = function(req, res){
      
         try {
             data = JSON.parse(data);
-        } catch (e) {
+        } 
+        catch (e) {
             res.end("{\"error\": \"Cannot parse the apiroutes.json file as JSON.\"}");
             return;
         }
-
      
         for (var i = 0; i < data.length; i++) {
             if (data[i].url === routeRequested) {

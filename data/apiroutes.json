@@ -6,5 +6,9 @@
 	{
 		"url": "test2",
 		"json": "{\"test2\": \"test2\"}"
+	},
+	{
+		"url": "test3", 
+		"json": "{\"test3\": \"test3\"}"
 	}
 ]
