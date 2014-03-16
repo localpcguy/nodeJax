@@ -5,11 +5,9 @@ block content
 		div.header
 			ul(class="nav nav-pills pull-right")
 				li.active 
-					a(href="#")= apiName
+					a(href="#/")= apiName
 				li 
-					a(href="#") Edit
-				li 
-					a(href="#") New
+					a(href="#/New") New
 			h3.text-muted nodeJax
 	div.container
 		div.row
@@ -20,8 +18,11 @@ block content
 					tr
 						th Routes
 						th Data
+						th 
 					each route in routes
 						tr
 							td api/
 								b= route.url
 							td= route.json
+							td 
+								a(href="#") Edit
