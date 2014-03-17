@@ -1,5 +1,27 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+	div.container
+		div.header
+			ul(class="nav nav-pills pull-right")
+				li.active 
+					a(href="#")= apiName
+				li 
+					a(href="#") Edit
+				li 
+					a(href="#") New
+			h3.text-muted nodeJax
+	div.container
+		div.row
+			div.col-xs12
+				h1= apiName
+				br
+				table(class='table table-striped')
+					tr
+						th Routes
+						th Data
+					each route in routes
+						tr
+							td api/
+								b= route.url
+							td= route.json
